@@ -1,0 +1,49 @@
+name: Question
+description: Ask a question about Libredesk Mobile.
+title: "[Question] "
+labels:
+  - question
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before asking, please check the [existing issues](../../issues) and [discussions](../../discussions) to see if your question has already been answered.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Ask your question clearly and concisely.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What were you trying to do? What have you already tried?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform (if relevant)
+      options:
+        - Android
+        - iOS
+        - Both
+        - Not applicable
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version (if relevant)
+      placeholder: e.g. 0.2.0
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional details
+      description: Any other information that might help answer your question.
