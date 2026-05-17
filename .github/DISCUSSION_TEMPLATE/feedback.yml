@@ -1,0 +1,50 @@
+title: Feedback
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing your feedback on Libredesk Mobile. This is the right place for general impressions, suggestions, and thoughts about the mobile experience.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Feedback summary
+      description: A short title for your feedback.
+      placeholder: e.g. The conversation view is smooth but search feels slow
+    validations:
+      required: true
+
+  - type: textarea
+    id: works_well
+    attributes:
+      label: What works well
+      description: What do you like about the current mobile experience?
+
+  - type: textarea
+    id: improvements
+    attributes:
+      label: What could be improved
+      description: What would you change or improve?
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - iOS
+        - Both
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      placeholder: e.g. 0.2.0
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, comparisons, or any other relevant details.
