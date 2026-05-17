@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/Libredesk-Cloud/libredesk-mobile-issues/blob/main/SECURITY.md
+    about: Do not report security vulnerabilities in public issues. Please read our Security Policy first.
+  - name: Support & help
+    url: https://github.com/Libredesk-Cloud/libredesk-mobile-issues/blob/main/SUPPORT.md
+    about: Not sure where to ask? Read our Support guide before opening an issue.
