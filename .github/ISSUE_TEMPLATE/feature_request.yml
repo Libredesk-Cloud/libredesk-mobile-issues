@@ -1,0 +1,72 @@
+name: Feature Request
+description: Suggest a new feature or improvement for Libredesk Mobile.
+title: "[Feature] "
+labels:
+  - enhancement
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement. Please describe the problem you are trying to solve — not just the solution you have in mind.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Feature summary
+      description: A short, clear title for the feature you are requesting.
+      placeholder: e.g. Support dark mode on Android
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What problem does this feature address? What is currently missing or frustrating?
+      placeholder: As a support agent, I need to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the feature or behavior you would like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you considered any workarounds or alternative approaches?
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Affected platform
+      options:
+        - Android
+        - iOS
+        - Both
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Nice to have
+        - Important
+        - Critical
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots, mockups, or links that help explain the request.
